@@ -1,0 +1,57 @@
+.big-card-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.big-card {
+  background: #f4f1e8;
+  border: 4px double #2c2416;
+  padding: 50px 60px;
+  max-width: 600px;
+  width: 90%;
+  font-family: 'Courier New', monospace;
+  position: relative;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+}
+
+.big-card h2 {
+  font-family: 'Georgia', serif;
+  font-size: 32px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: #2c2416;
+  margin: 0 0 30px 0;
+  border-bottom: 2px solid #8b7355;
+  padding-bottom: 15px;
+}
+
+.card-details p {
+  font-size: 18px;
+  color: #3d3020;
+  margin: 15px 0;
+  letter-spacing: 0.5px;
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  background: none;
+  border: none;
+  font-size: 40px;
+  cursor: pointer;
+  color: #2c2416;
+  line-height: 1;
+}
+
+.close-button:hover {
+  color: #8b7355;
+}
