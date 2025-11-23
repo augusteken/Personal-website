@@ -5,12 +5,13 @@
     2px 2px 0px rgba(0, 0, 0, 0.3),
     4px 4px 8px rgba(0, 0, 0, 0.2);
   padding: 30px 40px;
-  max-width: 500px;
-  margin: 70px auto;
+  max-width: 400px;
+  margin: 20px auto;
   font-family: 'Courier New', monospace;
   position: relative;
   transform: rotate(-1deg);
   cursor: pointer; /* Add this */
+  text-align: center; /* Add this */
 }
 
 .small-card::before {
@@ -34,6 +35,7 @@
   font-weight: 700;
   border-bottom: 2px solid #8b7355; /* Decorative line under name */
   padding-bottom: 10px;
+  text-align: center; /* Add this */
 }
 
 .small-card p {
@@ -42,6 +44,7 @@
   margin: 8px 0;
   font-weight: normal;
   letter-spacing: 0.5px;
+  text-align: center; /* Add this */
 }
 
 .small-card:hover {

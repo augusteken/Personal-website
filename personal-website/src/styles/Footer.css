@@ -1,0 +1,13 @@
+.footer {
+  background: #2c2416;
+  color: #f4f1e8;
+  padding: 20px;
+  text-align: center;
+  margin-top: 50px;
+  font-family: 'Courier New', monospace;
+}
+
+.footer p {
+  margin: 5px 0;
+  font-size: 14px;
+}

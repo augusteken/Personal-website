@@ -1,0 +1,40 @@
+.header {
+  background: #2c2416;
+  color: #f4f1e8;
+  padding: 20px;
+  text-align: center;
+  font-family: 'Courier New', monospace;
+}
+
+.header h1 {
+  margin: 5px 0;
+  font-size: 28px;
+  font-family: 'Georgia', serif;
+  letter-spacing: 2px;
+}
+
+.header p {
+  margin: 5px 0;
+  font-size: 14px;
+}
+
+.header-nav {
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+
+.header-nav a {
+  color: #f4f1e8;
+  text-decoration: none;
+  font-size: 16px;
+  padding: 10px 40px;
+  border: 1px solid #f4f1e8;
+  transition: all 0.3s ease;
+}
+
+.header-nav a:hover {
+  background: #f4f1e8;
+  color: #2c2416;
+}

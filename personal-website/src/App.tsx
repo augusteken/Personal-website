@@ -1,33 +1,27 @@
-import React, { useState } from 'react';
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './styles/App.css';
-import About from './components/About';
-import SmallCard from './components/SmallCard';
-import BigCard from './components/BigCard';
+import Header from './components/Header';
+import Footer from './components/Footer';
+import HomePage from './pages/HomePage';
+import AboutPage from './pages/AboutPage';
 
 function App() {
-  const [showBigCard, setShowBigCard] = useState(false);
-
   return (
-    <div className="App">
-      <SmallCard 
-        name="August Ek" 
-        email="augustek@live.se" 
-        phoneNumber="+46 70 511 48 04"
-        onClick={() => setShowBigCard(true)}
-      />
+    <Router>
+      <div className="App">
+        <Header />
 
-      {showBigCard && (
-        <BigCard 
-          name="August Ek" 
-          email="augustek@live.se"
-          phoneNumber="+46 70 511 48 04"
-          facebook="https://www.facebook.com/august.ek.9"
-          linkedin="https://www.linkedin.com/in/august-ek-516188136/"
-          github="https://github.com/augusteken"
-          onClose={() => setShowBigCard(false)}
-        />
-      )}
-    </div>
+        <div className="content">
+          <Routes>
+            <Route path="/" element={<HomePage />} />
+            <Route path="/about" element={<AboutPage />} />
+          </Routes>
+        </div>
+
+        <Footer />
+      </div>
+    </Router>
   );
 }
 
