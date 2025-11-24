@@ -22,6 +22,7 @@ function HomePage() {
           facebook="https://www.facebook.com/august.ek.9"
           linkedin="https://www.linkedin.com/in/august-ek-516188136/"
           github="https://github.com/augusteken"
+          gitlab="https://gitlab.liu.se/augek130"
           onClose={() => setShowBigCard(false)}
         />
       )}
